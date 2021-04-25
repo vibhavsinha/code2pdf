@@ -1,6 +1,6 @@
 {
   "name": "code2pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "print pdf from a list of code files",
   "bin": {
     "code2pdf": "index.js"
