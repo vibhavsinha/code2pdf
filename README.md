@@ -32,6 +32,8 @@ npm install -g code2pdf
 git ls-files | code2pdf
 ```
 
+### Example [example.pdf](./example.pdf)
+
 ## How it works
 
 - Readline to read list of files from standard input
