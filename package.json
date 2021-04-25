@@ -1,17 +1,23 @@
 {
   "name": "code2pdf",
   "version": "1.0.1",
+  "repository": "github:vibhavsinha/code2pdf",
   "description": "print pdf from a list of code files",
-  "bin": {
-    "code2pdf": "index.js"
-  },
+  "bin": "index.js",
   "author": "Vibhav Sinha <v@vsinha.me>",
   "license": "MIT",
   "dependencies": {
+    "commander": "^7.2.0",
     "prismjs": "^1.23.0",
     "puppeteer": "^9.0.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"
-  }
+  },
+  "keywords": [
+    "pdf",
+    "code review",
+    "highlight",
+    "cli"
+  ]
 }

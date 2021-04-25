@@ -1,6 +1,6 @@
 # code2pdf
 
-Print a list of files to a pdf file
+Print pdf from a list of code files
 
 ## Why
 
@@ -32,6 +32,35 @@ npm install -g code2pdf
 git ls-files | code2pdf
 ```
 
+### CLI Options
+
+```
+Usage: code2pdf [options]
+
+Options:
+  -n --name <string>     name of output file (default: "code2pdf_<time>.pdf")
+  -f --format <string>   page size format (default: "a4")
+  -s, --scale <decimal>  scale factor (default: 0.6)
+  -p, --preview          display non-headless chromium with preview (default:
+                         false)
+  -V, --version          output the version number
+  -h, --help             display help for command
+```
+
+The format options are:
+
+- Letter: 8.5in x 11in
+- Legal: 8.5in x 14in
+- Tabloid: 11in x 17in
+- Ledger: 17in x 11in
+- A0: 33.1in x 46.8in
+- A1: 23.4in x 33.1in
+- A2: 16.54in x 23.4in
+- A3: 11.7in x 16.54in
+- A4: 8.27in x 11.7in
+- A5: 5.83in x 8.27in
+- A6: 4.13in x 5.83in
+
 ### Example [example.pdf](https://github.com/vibhavsinha/code2pdf/blob/main/example.pdf)
 
 ## How it works
@@ -49,7 +78,6 @@ git ls-files | code2pdf
 - Intelligent sorting based on dependencies
 - Support more languages
 - Support line-wrapping. Currently, adding `whitespace: pre-wrap` breaks sequence
-- Allow more CLI options such as scale factor and pdf format
 
 ## License
 
