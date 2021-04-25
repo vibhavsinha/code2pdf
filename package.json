@@ -1,6 +1,6 @@
 {
   "name": "code2pdf",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "github:vibhavsinha/code2pdf",
   "description": "print pdf from a list of code files",
   "bin": "index.js",
