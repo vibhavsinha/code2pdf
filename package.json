@@ -1,0 +1,17 @@
+{
+  "name": "code2pdf",
+  "version": "1.0.0",
+  "description": "print pdf from a list of code files",
+  "bin": {
+    "code2pdf": "index.js"
+  },
+  "author": "Vibhav Sinha <v@vsinha.me>",
+  "license": "MIT",
+  "dependencies": {
+    "prismjs": "^1.23.0",
+    "puppeteer": "^9.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  }
+}
