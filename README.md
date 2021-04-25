@@ -32,7 +32,7 @@ npm install -g code2pdf
 git ls-files | code2pdf
 ```
 
-### Example [example.pdf](./example.pdf)
+### Example [example.pdf](https://github.com/vibhavsinha/code2pdf/blob/main/example.pdf)
 
 ## How it works
 
