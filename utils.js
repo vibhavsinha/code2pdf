@@ -13,7 +13,7 @@ const newFileName = () => {
 };
 
 const extractExtension = (path) => {
-  const fileExtMatch = path.match(/\.([^.]+)/);
+  const fileExtMatch = path.match(/\.([^.]+)$/);
   if (!fileExtMatch) return;
   return fileExtMatch[1];
 };
