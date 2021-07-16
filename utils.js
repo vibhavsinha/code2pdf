@@ -1,7 +1,7 @@
 const {readFile} = require('fs/promises');
 const Prism = require('prismjs');
 const loadLanguages = require('prismjs/components/');
-loadLanguages(['ts', 'swift'])
+loadLanguages(['ts', 'swift', 'php', 'java', 'kotlin'])
 
 const newFileName = () => {
   const d = new Date();
@@ -18,7 +18,7 @@ const extractExtension = (path) => {
   return fileExtMatch[1];
 };
 
-const validExtensions = ['js', 'c', 'cpp', 'cs', 'css', 'html', 'xml', 'svg', 'ts', 'swift'];
+const validExtensions = ['js', 'c', 'cpp', 'cs', 'css', 'html', 'xml', 'svg', 'ts', 'swift', 'java', 'kt', 'php'];
 
 const getLanguage = (path) => {
   const extension = extractExtension(path);
@@ -45,6 +45,12 @@ const getLanguage = (path) => {
     case 'xml':
     case 'svg':
       language = 'markup';
+    case 'php':
+      language = 'php';
+    case 'kt':
+      launguage = 'kotlin';
+    case 'java':
+      language = 'java'
   }
   return language;
 };
